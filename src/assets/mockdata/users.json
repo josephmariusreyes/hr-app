@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Admin User",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "contactNo": "09171234567"
+    },
+    {
+      "id": 2,
+      "name": "User One",
+      "username": "user1",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09181112222"
+    },
+    {
+      "id": 3,
+      "name": "User Two",
+      "username": "user2",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09183334444"
+    },
+    {
+      "id": 4,
+      "name": "User Three",
+      "username": "user3",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09184445555"
+    },
+    {
+      "id": 5,
+      "name": "User Four",
+      "username": "user4",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09185556666"
+    },
+    {
+      "id": 6,
+      "name": "User Five",
+      "username": "user5",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09186667777"
+    },
+    {
+      "id": 7,
+      "name": "User Six",
+      "username": "user6",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09187778888"
+    },
+    {
+      "id": 8,
+      "name": "User Seven",
+      "username": "user7",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09188889999"
+    },
+    {
+      "id": 9,
+      "name": "User Eight",
+      "username": "user8",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09189990000"
+    },
+    {
+      "id": 10,
+      "name": "User Nine",
+      "username": "user9",
+      "password": "user123",
+      "role": "noneadmin",
+      "contactNo": "09180001111"
+    }
+  ]
+  
