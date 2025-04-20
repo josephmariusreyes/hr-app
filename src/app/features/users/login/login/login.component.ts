@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   standalone:false
 })
 export class LoginComponent {
+  username = '';
+  password = '';
 
+  login() {
+    console.log('Username:', this.username);
+    console.log('Password:', this.password);
+    // Add login logic here
+  }
 }

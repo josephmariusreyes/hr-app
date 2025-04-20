@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="p-fluid p-formgrid p-grid login-container">
+    <div class="p-col-12">
+      <h2>Login</h2>
+    </div>
+  
+    <div class="p-col-12">
+      <label for="username">Username</label>
+      <input id="username" type="text" pInputText [(ngModel)]="username" />
+    </div>
+  
+    <div class="p-col-12">
+      <label for="password">Password</label>
+      <input id="password" type="password" pInputText [(ngModel)]="password" />
+    </div>
+  
+    <div class="p-col-12">
+      <button pButton type="button" label="Login" (click)="login()"></button>
+    </div>
+  
+    <div class="p-col-12">
+      <a [routerLink]="['/register']" class="register-link">New application?</a>
+    </div>
+  </div>
