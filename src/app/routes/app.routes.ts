@@ -4,5 +4,5 @@ export const mainRoutes: Routes = [
   { path: '', redirectTo: 'user/login', pathMatch: 'full' },
   {
     path: 'user',
-    loadChildren: () => import('./features/users/users.module').then(m => m.UsersModule)
+    loadChildren: () => import('../features/users/users.module').then(m => m.UsersModule)
   }];

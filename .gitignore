@@ -40,3 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+.vs/hr-app/FileContentIndex/2fb70db1-c953-4f9e-9ec7-4f3d1e20075d.vsidx
+.vs/hr-app/v17/.wsuo
+.vs/VSWorkspaceState.json
+.vs/slnx.sqlite
