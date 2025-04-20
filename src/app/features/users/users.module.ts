@@ -6,7 +6,7 @@ import { RegisterComponent } from './register/register/register.component';
 import { LoginComponent } from './login/login/login.component';
 import { FormsModule } from '@angular/forms'; 
 import { ButtonModule } from 'primeng/button';
-
+import { PasswordModule } from 'primeng/password';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { ButtonModule } from 'primeng/button';
     CommonModule,
     UsersRoutingModule,
     ButtonModule,
-    FormsModule 
+    FormsModule,
+    PasswordModule
   ],
   exports:[
     LoginComponent,

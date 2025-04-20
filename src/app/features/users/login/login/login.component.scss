@@ -1,15 +1,67 @@
-.login-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 2rem;
-    border: 1px solid #ccc;
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f6f9;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+
+  .login-card {
+    background: #fff;
+    padding: 2rem 3rem;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .p-field {
+      margin-bottom: 1.5rem;
+    
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: #555;
+      }
+    
+      input,
+      ::ng-deep .p-password input {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+    
+      // This ensures the p-password wrapper spans full width
+      ::ng-deep .p-password {
+        width: 100%;
+      }
+    }
+
+    .p-button {
+      width: 100%;
+      font-weight: 600;
+    }
+
+    .register-link-wrapper {
+      margin-top: 1.5rem;
+      text-align: right;
+
+      .register-link {
+        color: #007ad9;
+        text-decoration: none;
+        font-size: 0.95rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
-  
-  .register-link {
-    display: block;
-    margin-top: 1rem;
-    text-align: right;
-    color: #007ad9;
-    text-decoration: none;
-  }
+}
