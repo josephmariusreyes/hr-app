@@ -1,0 +1,32 @@
+/* src/styles/global-styles.scss */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #222;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+  
+.main-app-global-header {
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-app-container {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+/* Add more global styles as needed */
