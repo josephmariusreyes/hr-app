@@ -1,1 +1,65 @@
-<p>register works!</p>
+<div class="register-wrapper">
+  <p-card class="register-card" [style]="{ width: '700px' }">
+    <ng-template pTemplate="header">
+      <h2>Register</h2>
+    </ng-template>
+    <ng-template pTemplate="content">
+      <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <div class="p-field">
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" pInputText formControlName="firstName" placeholder="Enter your first name" />
+          @if (registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched) {
+            <div class="error-text">First Name is required</div>
+          }
+        </div>
+
+        <div class="p-field">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" pInputText formControlName="lastName" placeholder="Enter your last name" />
+          @if (registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched) {
+            <div class="error-text">Last Name is required</div>
+          }
+        </div>
+
+        <div class="p-field">
+          <label for="email">Email</label>
+          <input id="email" type="email" pInputText formControlName="email" placeholder="Enter your email" />
+          @if (registerForm.get('email')?.invalid && registerForm.get('email')?.touched) {
+            <div class="error-text">
+              <span *ngIf="registerForm.get('email')?.errors?.['required']">Email is required</span>
+              <span *ngIf="registerForm.get('email')?.errors?.['email']">Invalid email</span>
+            </div>
+          }
+        </div>
+
+        <div class="p-field">
+          <label for="username">Username</label>
+          <input id="username" type="text" pInputText formControlName="username" placeholder="Choose a username" />
+          @if (registerForm.get('username')?.invalid && registerForm.get('username')?.touched) {
+            <div class="error-text">Username is required</div>
+          }
+        </div>
+
+        <div class="p-field">
+          <label for="hireDate">Hire Date</label>
+          <input id="hireDate" type="date" pInputText formControlName="hireDate" />
+          @if (registerForm.get('hireDate')?.invalid && registerForm.get('hireDate')?.touched) {
+            <div class="error-text">Hire Date is required</div>
+          }
+        </div>
+
+        <div class="p-field">
+          <label for="password">Password</label>
+          <div class="w-100">
+            <p-password formControlName="password" inputId="password" [feedback]="false" placeholder="Enter your password"></p-password>
+          </div>
+          @if (registerForm.get('password')?.invalid && registerForm.get('password')?.touched) {
+            <div class="error-text">Password is required</div>
+          }
+        </div>
+
+        <button pButton type="submit" label="Register" class="p-button-primary p-mt-3" [disabled]="registerForm.invalid"></button>
+      </form>
+    </ng-template>
+  </p-card>
+</div>
