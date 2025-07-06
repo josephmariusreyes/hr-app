@@ -16,5 +16,7 @@ export class RegisterComponent {
 
   constructor(private store: Store) {
     this.currentUser$ = this.store.select(selectCurrentUser);
+
+    debugger;
   }
 }

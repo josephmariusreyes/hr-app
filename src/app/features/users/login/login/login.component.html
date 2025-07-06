@@ -1,23 +1,38 @@
 <div class="login-wrapper">
-  <div class="login-card">
-    <h2>Login</h2>
+  <p-card>
+    <ng-template pTemplate="header">
+      <h2>Login</h2>
+    </ng-template>
+    <ng-template pTemplate="content">
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="p-field">
+          <label for="usernameOrEmail">Username or Email</label>
+          <input id="usernameOrEmail" type="text" pInputText formControlName="usernameOrEmail" placeholder="Enter your username or email" />
+          @if (loginForm.get('usernameOrEmail')?.invalid && loginForm.get('usernameOrEmail')?.touched) {
+            <div class="error-text">
+              Username or Email is required
+            </div>
+          }
+        </div>
 
-    <div class="p-field">
-      <label for="username">Username</label>
-      <input id="username" type="text" pInputText [(ngModel)]="username" placeholder="Enter your username" />
-    </div>
+        <div class="p-field">
+          <label for="password">Password</label>
+          <div class="w-100">
+            <p-password formControlName="password" inputId="password" [feedback]="false" placeholder="Enter your password"></p-password>
+          </div>
+          @if (loginForm.get('password')?.invalid && loginForm.get('password')?.touched) {
+            <div class="error-text">
+              Password is required
+            </div>
+          }
+        </div>
 
-    <div class="p-field">
-      <label for="password">Password</label>
-      <div class="w-100">
-        <p-password [(ngModel)]="password" inputId="password" [feedback]="false" placeholder="Enter your password"></p-password>
+        <button pButton type="submit" label="Login" class="p-button-primary p-mt-3" [disabled]="loginForm.invalid"></button>
+      </form>
+
+      <div class="register-link-wrapper">
+        <a [routerLink]="['/user/register']" class="register-link">New application?</a>
       </div>
-    </div>
-
-    <button pButton type="button" label="Login" class="p-button-primary p-mt-3" (click)="login()"></button>
-
-    <div class="register-link-wrapper">
-      <a [routerLink]="['/user/register']" class="register-link">New application?</a>
-    </div>
-  </div>
+    </ng-template>
+  </p-card>
 </div>

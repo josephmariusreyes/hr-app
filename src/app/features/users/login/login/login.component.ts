@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { createLoginFormGroup } from '../../../../helpers/form-helpers';
 
 @Component({
   selector: 'app-login',
@@ -7,12 +9,19 @@ import { Component } from '@angular/core';
   standalone:false
 })
 export class LoginComponent {
-  username = '';
-  password = '';
+
+  loginForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.loginForm = createLoginFormGroup(this.fb);
+  }
 
   login() {
-    console.log('Username:', this.username);
-    console.log('Password:', this.password);
-    // Add login logic here
+    if (this.loginForm.valid) {
+      alert('Call login API');
+      // Here you would call your login API
+    } else {
+      this.loginForm.markAllAsTouched();
+    }
   }
 }
