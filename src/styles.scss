@@ -1,6 +1,6 @@
 
 /* You can add global styles to this file, and also import other style files */
-@import 'styles/global-styles.scss';
+@use 'styles/global-styles.scss' as *;
 
 body {
   font-family: 'Segoe UI', 'Roboto', sans-serif;
