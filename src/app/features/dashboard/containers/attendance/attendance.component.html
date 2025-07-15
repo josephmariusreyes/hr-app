@@ -5,4 +5,30 @@
     <h3>Attendance Dialog</h3>
     <p>This is content inside the dialog from Attendance component.</p>
   </app-shared-dialog>
+
+  <p-table
+    [value]="attendanceRecords"
+    [paginator]="true"
+    [rows]="rows"
+    [first]="first"
+    [loading]="loading"
+    (onPage)="onPageChange($event)"
+    [rowsPerPageOptions]="[5,10,15]"
+    responsiveLayout="scroll"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Address</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-row>
+      <tr>
+        <td>{{ row.name }}</td>
+        <td>{{ row.number }}</td>
+        <td>{{ row.address }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
 </div>
