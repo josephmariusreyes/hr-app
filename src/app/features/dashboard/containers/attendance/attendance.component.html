@@ -1,4 +1,8 @@
 <div class="attendance-container">
   <h2>Attendance</h2>
-  <!-- Add attendance content here -->
+  <button type="button" (click)="showDialog = true">Show Dialog</button>
+  <app-shared-dialog *ngIf="showDialog" (click)="$event.stopPropagation()" (onHide)="showDialog = false">
+    <h3>Attendance Dialog</h3>
+    <p>This is content inside the dialog from Attendance component.</p>
+  </app-shared-dialog>
 </div>
