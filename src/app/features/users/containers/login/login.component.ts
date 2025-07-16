@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { createLoginFormGroup } from '../../../../helpers/form-helpers';
+import { createLoginFormGroup } from '../../../../core/helpers/form-helpers';
 
 @Component({
   selector: 'app-login',

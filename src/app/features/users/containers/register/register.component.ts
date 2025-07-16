@@ -5,7 +5,7 @@ import { IUser } from '../../../../core/models/user.model';
 import { Store } from '@ngrx/store';
 import { selectCurrentUser } from '../../../../core/state/user';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { createRegisterFormGroup } from '../../../../helpers/form-helpers';
+import { createRegisterFormGroup } from '../../../../core/helpers/form-helpers';
 
 @Component({
   selector: 'app-register',

@@ -1,9 +1,10 @@
 export interface IUser {
-    id: number;
-    name: string;
+    id: string;
+    employeeId: string;
     username: string;
     password: string;
-    role: 'admin' | 'noneadmin';
-    contactNo: string;
+    permission: number;
+    contactNumber: string;
+    department: number;
   }
   

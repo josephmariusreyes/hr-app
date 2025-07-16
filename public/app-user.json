@@ -1,0 +1,47 @@
+[
+  {
+    "id": "a3f2b7c1-8e4a-4d6c-9a2e-1f5e7b3c2d4f",
+    "employeeId": "b1e9c5a2-7d3f-4e8b-9c1a-2f4d6e7b8c9d",
+    "username": "loremipsum",
+    "password": "123456",
+    "permission": 0,
+    "contactNumber": "09687454355",
+    "department": 1
+  },
+  {
+    "id": "c4d7e2b8-9f1a-4c3d-8e2b-5a6c7d8e9f0a",
+    "employeeId": "d2e8f6c3-1b4a-5d7e-8c9b-0a1b2c3d4e5f",
+    "username": "dolorsitamet",
+    "password": "123456",
+    "permission": 1,
+    "contactNumber": "09687454355",
+    "department": 2
+  },
+  {
+    "id": "e5f8a3c2-6d4b-9e1a-2c3d-7b8e9f0a1b2c",
+    "employeeId": "f3a2b1c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+    "username": "consectetur",
+    "password": "123456",
+    "permission": 0,
+    "contactNumber": "09687454355",
+    "department": 3
+  },
+  {
+    "id": "b6c7d8e9-0a1b-2c3d-4e5f-6a7b8c9d0e1f",
+    "employeeId": "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+    "username": "adipiscing",
+    "password": "123456",
+    "permission": 1,
+    "contactNumber": "09687454355",
+    "department": 4
+  },
+  {
+    "id": "d9e0f1a2-3b4c-5d6e-7f8a-9b0c1d2e3f4a",
+    "employeeId": "e0f1a2b3-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
+    "username": "elituser",
+    "password": "123456",
+    "permission": 0,
+    "contactNumber": "09687454355",
+    "department": 5
+  }
+]
