@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-landing',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard-landing.component.scss'],
   standalone: false
 })
-export class DashboardLandingComponent {
-
+export class DashboardLandingComponent implements OnInit {
+  ngOnInit(): void {
+    debugger;
+    // Initialization logic here
+    // Example: console.log('DashboardLandingComponent initialized');
+  }
 }

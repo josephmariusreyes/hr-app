@@ -10,5 +10,5 @@ export const selectCurrentUser = createSelector(
 
 export const selectUserRole = createSelector(
   selectCurrentUser,
-  (user) => user?.role
+  (user) => user?.permission
 );

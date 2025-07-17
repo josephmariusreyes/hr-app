@@ -31,4 +31,9 @@ export class UserService {
 
   register(newUser: IUser) {
   }
+
+  logout() {
+    localStorage.removeItem('user');
+    this.store.dispatch(UserActions.logout());
+  }
 }
