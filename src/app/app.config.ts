@@ -7,13 +7,15 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 
+import { provideHttpClient } from '@angular/common/http';
+
 import { mainRoutes } from './routes/app.routes';
 import { AppState } from './core/state/app.state';
 import { userReducer } from './core/state/user';
 
 export const appConfig = [
   provideRouter(mainRoutes),
-  provideStore({ user: userReducer }),
+  provideStore({ userW: userReducer }),
   provideEffects([]),
   provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
   provideAnimations(),
@@ -22,4 +24,5 @@ export const appConfig = [
       preset: Aura
     }
   })
+  ,provideHttpClient()
 ];

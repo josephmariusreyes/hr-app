@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { PasswordModule } from 'primeng/password';
 import { CardModule } from 'primeng/card';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CardModule } from 'primeng/card';
     FormsModule,
     PasswordModule,
     ReactiveFormsModule,
-    CardModule
+    CardModule,
+    HttpClientModule,
   ],
   exports:[
     LoginComponent,
