@@ -22,7 +22,6 @@ export class UserService {
 
   login(username: string, password: string) {
     const user = this.users.find(u => u.username === username && u.password === password);
-    debugger;
     if (user) {
       localStorage.setItem('user', JSON.stringify(user));
       this.store.dispatch(UserActions.loginSuccess({ user }));

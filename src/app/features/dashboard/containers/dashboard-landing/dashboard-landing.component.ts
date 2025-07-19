@@ -1,4 +1,6 @@
 
+import { Router } from '@angular/router';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
   standalone: false
 })
 export class DashboardLandingComponent implements OnInit {
+  constructor(private router: Router) {}
+
+  goToAttendance() {
+    this.router.navigate(['dashboard/attendance']);
+  }
   ngOnInit(): void {
-    debugger;
     // Initialization logic here
     // Example: console.log('DashboardLandingComponent initialized');
   }

@@ -2,7 +2,7 @@
   <div class="dashboard-landing-content">
     <div class="dashboard-links">
       <div class="action-preview">
-        <a [routerLink]="['attendance']">
+        <a (click)="goToAttendance()" style="cursor:pointer;">
           <p-card header="Attendance">
             <p class="m-0">Go to Attendance</p>
           </p-card>
