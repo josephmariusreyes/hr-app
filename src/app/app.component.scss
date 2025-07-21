@@ -1,0 +1,15 @@
+.app-header-container {
+    height:80px;
+    width:100%;
+    border:1px dashed #ccc;
+}
+.app-body-container {
+    max-width: 1200px;
+    min-width: 360px;
+    margin: 0 auto;
+    border: 1px dashed #ccc;
+    flex: 1 1 auto;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}

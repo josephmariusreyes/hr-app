@@ -1,35 +1,30 @@
 <div class="dashboard-landing-container">
-  <div class="dashboard-landing-content">
-    <div class="dashboard-links">
-      <div class="action-preview">
-        <a (click)="goToAttendance()" style="cursor:pointer;">
-          <p-card header="Attendance">
-            <p class="m-0">Go to Attendance</p>
-          </p-card>
-        </a>
-      </div>
-      <div class="action-preview">
-        <a [routerLink]="['requests']">
-          <p-card header="Requests">
-            <p class="m-0">Go to Requests</p>
-          </p-card>
-        </a>
-      </div>
-      <div class="action-preview">
-        <a [routerLink]="['payslips']">
-          <p-card header="Payslips">
-            <p class="m-0">Go to Payslips</p>
-          </p-card>
-        </a>
-      </div>
-      <div class="action-preview">
-        <a [routerLink]="['profile']">
-          <p-card header="Profile">
-            <p class="m-0">Go to Profile</p>
-          </p-card>
-        </a>
-      </div>
-    </div>
-
+  <div class="action-preview">
+    <a (click)="goToAttendance()" style="cursor:pointer;">
+      <p-card header="Attendance">
+        <p class="m-0">Go to Attendance</p>
+      </p-card>
+    </a>
+  </div>
+  <div class="action-preview">
+    <a [routerLink]="['requests']">
+      <p-card header="Requests">
+        <p class="m-0">Go to Requests</p>
+      </p-card>
+    </a>
+  </div>
+  <div class="action-preview">
+    <a [routerLink]="['payslips']">
+      <p-card header="Payslips">
+        <p class="m-0">Go to Payslips</p>
+      </p-card>
+    </a>
+  </div>
+  <div class="action-preview">
+    <a [routerLink]="['profile']">
+      <p-card header="Profile">
+        <p class="m-0">Go to Profile</p>
+      </p-card>
+    </a>
   </div>
 </div>
