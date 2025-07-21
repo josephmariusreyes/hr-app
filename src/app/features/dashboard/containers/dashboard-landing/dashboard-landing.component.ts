@@ -15,6 +15,7 @@ export class DashboardLandingComponent implements OnInit {
   goToAttendance() {
     this.router.navigate(['dashboard/attendance']);
   }
+  
   ngOnInit(): void {
     // Initialization logic here
     // Example: console.log('DashboardLandingComponent initialized');
