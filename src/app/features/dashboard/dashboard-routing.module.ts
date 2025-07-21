@@ -8,10 +8,10 @@ import { ProfileComponent } from './containers/profile/profile.component';
 
 const routes: Routes = [
   { path: 'landing', component: DashboardLandingComponent },
-  { path: 'attendance', component: AttendanceComponent }
-  // { path: 'requests', component: RequestsComponent },
-  // { path: 'payslips', component: PayslipsComponent },
-  // { path: 'profile', component: ProfileComponent },
+  { path: 'attendance', component: AttendanceComponent },
+  { path: 'requests', component: RequestsComponent },
+  { path: 'payslips', component: PayslipsComponent },
+  { path: 'profile', component: ProfileComponent },
 ];
 
 @NgModule({

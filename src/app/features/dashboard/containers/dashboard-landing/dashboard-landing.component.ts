@@ -15,6 +15,18 @@ export class DashboardLandingComponent implements OnInit {
   goToAttendance() {
     this.router.navigate(['dashboard/attendance']);
   }
+
+  goToRequests() {
+    this.router.navigate(['dashboard/requests']);
+  }
+
+  goToPayslips() {
+    this.router.navigate(['dashboard/payslips']);
+  }
+
+  goToProfile() {
+    this.router.navigate(['dashboard/profile']);
+  }
   
   ngOnInit(): void {
     // Initialization logic here

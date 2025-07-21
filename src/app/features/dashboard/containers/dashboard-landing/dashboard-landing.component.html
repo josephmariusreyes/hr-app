@@ -7,21 +7,21 @@
     </a>
   </div>
   <div class="action-preview">
-    <a [routerLink]="['requests']">
+    <a (click)="goToRequests()" style="cursor:pointer;">
       <p-card header="Requests">
         <p class="m-0">Go to Requests</p>
       </p-card>
     </a>
   </div>
   <div class="action-preview">
-    <a [routerLink]="['payslips']">
+    <a (click)="goToPayslips()" style="cursor:pointer;">
       <p-card header="Payslips">
         <p class="m-0">Go to Payslips</p>
       </p-card>
     </a>
   </div>
   <div class="action-preview">
-    <a [routerLink]="['profile']">
+    <a (click)="goToProfile()" style="cursor:pointer;">
       <p-card header="Profile">
         <p class="m-0">Go to Profile</p>
       </p-card>
