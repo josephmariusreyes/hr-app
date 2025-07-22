@@ -1,15 +1,22 @@
-.app-header-container {
-    height:60px;
-    width:100%;
-    border:1px dashed #ccc;
-}
+
 .app-body-container {
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
+.router-outlet-container {
     max-width: 1300px;
     min-width: 360px;
-    margin: 0 auto;
-    border: 1px dashed #ccc;
+    margin:0 auto;
     flex: 1 1 auto;
-    height: calc(100vh - 60px);
     box-sizing: border-box;
     overflow-y: auto;
+    height:100%;
+}
+.app-body-container-logged-out {
+    height:100%;
+}
+.app-body-container-logged-in {
+    height: calc(100vh - 60px);
 }

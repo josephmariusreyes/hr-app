@@ -1,6 +1,6 @@
-<div class="app-header-container">
-    <app-shared-header></app-shared-header>
-</div>
-<div class="app-body-container">
-    <router-outlet></router-outlet>
+<app-shared-header></app-shared-header>
+<div class="app-body-container" [ngClass]="containerClasses">
+    <div class="router-outlet-container">
+        <router-outlet></router-outlet>
+    </div>
 </div>

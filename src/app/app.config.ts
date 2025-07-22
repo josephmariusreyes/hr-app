@@ -15,7 +15,7 @@ import { userReducer } from './core/state/user';
 
 export const appConfig = [
   provideRouter(mainRoutes),
-  provideStore({ userW: userReducer }),
+  provideStore({ user: userReducer }),
   provideEffects([]),
   provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
   provideAnimations(),
