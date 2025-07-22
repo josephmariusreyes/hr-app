@@ -4,17 +4,19 @@ import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 import { UserService } from "../services/users.service";
 
-
-export function hrisDashboardGuard(route: ActivatedRouteSnapshot): Observable<boolean | UrlTree> {
+export function loginGuard(route: ActivatedRouteSnapshot): Observable<boolean | UrlTree> {
     const router = inject(Router);
     const userService = inject(UserService);
     
     return userService.getCurrentUser().pipe(
         map(user => {
             if (user) {
-                return true;
+                // User is logged in, redirect to dashboard
+                return router.parseUrl('/dashboard/landing');
             }
-            return router.parseUrl('/user/login');
+            
+            // User is not logged in, allow access to login/register
+            return true;
         })
     );
 }
