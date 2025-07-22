@@ -1,3 +1,22 @@
-<div class="">
+@if (currentUser$ | async) {
+  <div class="header-container">
+    <div class="header-content">
+      <!-- Left side - Logo -->
+      <div class="brand-section">
+        <i class="pi pi-users brand-icon"></i>
+        <span class="brand-text">HRIS Portal</span>
+      </div>
 
-</div>
+      <!-- Right side - Logout button -->
+      <div class="actions-section">
+        <p-button 
+          label="Logout" 
+          icon="pi pi-sign-out" 
+          severity="secondary" 
+          (onClick)="logout()"
+          class="p-button-outlined">
+        </p-button>
+      </div>
+    </div>
+  </div>
+}

@@ -20,6 +20,7 @@ export class SharedHeaderComponent implements OnInit, OnDestroy {
 
   constructor(
     private store: Store,
+    private router: Router
   ) {
     this.currentUser$ = this.store.select(selectCurrentUser);
   }
@@ -35,6 +36,10 @@ export class SharedHeaderComponent implements OnInit, OnDestroy {
   onDocumentClick(event: Event): void {
   }
 
-
+  logout(): void {
+    // Dispatch logout action to NgRx store
+    this.store.dispatch(logout());
+    this.router.navigate(['/user/login']);
+  }
 
 }
