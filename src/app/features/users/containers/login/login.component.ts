@@ -22,7 +22,6 @@ export class LoginComponent {
 
   login() {
     if (this.loginForm.valid) {
-      debugger;
       // Ensure username is correctly retrieved from the form
       const username = this.loginForm.get('usernameOrEmail')?.value;
       const password = this.loginForm.get('password')?.value;

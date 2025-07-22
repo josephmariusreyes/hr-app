@@ -7,6 +7,7 @@ import { PayslipsComponent } from './containers/payslips/payslips.component';
 import { ProfileComponent } from './containers/profile/profile.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'landing', pathMatch: 'full' },
   { path: 'landing', component: DashboardLandingComponent },
   { path: 'attendance', component: AttendanceComponent },
   { path: 'requests', component: RequestsComponent },
